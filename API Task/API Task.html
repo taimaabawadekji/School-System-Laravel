@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>API Task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <header>
+      <img class="menu-icon" src="images/Hamburger Menu.svg" alt="Menu" />
+      <h1>SHOP.CO</h1>
+      <nav>
+        <ul class="main-menu">
+          <li>Shop</li>
+          <li>On Sale</li>
+          <li>New Arrivals</li>
+          <li>Brands</li>
+        </ul>
+      </nav>
+      <div class="search-container">
+        <form action="/search" method="get">
+          <div class="search-box">
+            <img src="images/search icon.svg" alt="Search Icon" />
+            <input
+              type="text"
+              name="query"
+              placeholder="Search for products..."
+              required
+            />
+          </div>
+        </form>
+      </div>
+      <div class="header-icons">
+        <img
+          class="responsive-search-icon"
+          src="images/Search icon black.svg"
+          alt="Search Icon"
+        />
+        <img src="images/cart icon.png" alt="Shopping cart" />
+        <img src="images/profile icon.png" alt="Profile Icon" />
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="hero-section">
+          <div class="hero-content">
+            <h1>FIND PRODUCTS<br />THAT MATCHES<br />YOUR NEEDS</h1>
+            <p>
+              Browse through our diverse range of meticulously crafted garments,
+              designed<br />to bring out your individuality and cater to your
+              sense of style.
+            </p>
+            <button>Shop Now</button>
+            <div class="statics">
+              <div class="stat-box">
+                <h2>200+</h2>
+                <p>International Brands</p>
+              </div>
+              <div class="divider"></div>
+              <div class="stat-box">
+                <h2>2,000+</h2>
+                <p>High-Quality Products</p>
+              </div>
+              <div class="divider"></div>
+              <div class="stat-box">
+                <h2>30,000+</h2>
+                <p>Happy Customers</p>
+              </div>
+            </div>
+          </div>
+          <img src="images/E-Shopping.webp" alt="E-Shopping Girl" />
+        </div>
+      </section>
+      <section>
+        <div class="brands">
+          <img src="images/Versace Logo.svg" alt="Versace Logo" />
+          <img src="images/Zara Logo.svg" alt="Zara Logo" />
+          <img src="images/Gucci Logo.svg" alt="Gucci Logo" />
+          <img src="images/Prada Logo.svg" alt="Prada Logo" />
+          <img src="images/Calvin Klein Logo.svg" alt="Calvin Klein" />
+        </div>
+        <div class="items">
+          <h1>NEW PRODUCTS</h1>
+          <div id="product-list"></div>
+        </div>
+      </section>
+      <button
+        class="new-product-button"
+        onclick="window.location.href='add-product.html'"
+      >
+        Add New Product
+      </button>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
